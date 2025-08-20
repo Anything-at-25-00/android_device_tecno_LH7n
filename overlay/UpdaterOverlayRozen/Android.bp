@@ -1,0 +1,4 @@
+runtime_resource_overlay {
+    name: "UpdaterOverlayRozen",
+    product_specific: true,
+}

@@ -319,6 +319,7 @@ PRODUCT_PACKAGES += \
     SettingsProviderOverlayRozen \
     SystemUIResOverlayRozen \
     TetheringResOverlayRozen \
+    UpdaterOverlayRozen \
     WifiResOverlayRozen
 
 # Lineage-Specific Overlays
