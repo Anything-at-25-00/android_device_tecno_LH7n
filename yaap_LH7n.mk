@@ -1,5 +1,5 @@
 #
-# SPDX-FileCopyrightText: The LineageOS Project
+# SPDX-FileCopyrightText: Yet Another AOSP Project
 # SPDX-License-Identifier: Apache-2.0
 #
 
@@ -10,11 +10,11 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from device makefile.
 $(call inherit-product, device/tecno/LH7n/device.mk)
 
-# Inherit some common LineageOS stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common YAAP stuff.
+$(call inherit-product, vendor/yaap/config/common_full_phone.mk)
 
 BOARD_VENDOR := TECNO
-PRODUCT_NAME := lineage_LH7n
+PRODUCT_NAME := yaap_LH7n
 PRODUCT_DEVICE := LH7n
 PRODUCT_MANUFACTURER := TECNO
 PRODUCT_BRAND := TECNO
@@ -26,5 +26,4 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     DeviceName=LH7n \
     BuildFingerprint=TECNO/LH7n-GL/TECNO-LH7n:14/UP1A.231005.007/250416V781:user/release-keys
 
-# Time
-LINEAGE_VERSION_APPEND_TIME_OF_DAY := true
+TARGET_BOARD_PLATFORM := mt6789

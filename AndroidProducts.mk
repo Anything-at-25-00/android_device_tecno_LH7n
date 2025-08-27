@@ -4,4 +4,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_LH7n.mk
+    $(LOCAL_DIR)/yaap_LH7n.mk
