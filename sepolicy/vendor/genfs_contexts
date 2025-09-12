@@ -143,6 +143,10 @@ genfscon sysfs /devices/platform/soc/10026000.pwrap/10026000.pwrap:mt6366/mt6358
 genfscon proc /sys/vm/lowmem_reserve_ratio    u:object_r:proc_watermark_boost_factor:s0
 genfscon proc /sys/vm/min_free_kbytes         u:object_r:proc_watermark_boost_factor:s0
 
+# VM stuff
+genfscon proc /sys/vm/vfs_cache_pressure            u:object_r:proc_drop_caches:s0
+genfscon proc /sys/vm/dirty_ratio                   u:object_r:proc_dirty:s0
+
 # Torch
 genfscon sysfs /devices/virtual/sub_torch/sub_torch/sub_torch_level                                 u:object_r:sysfs_sub_torch_file:s0
 genfscon sysfs /devices/virtual/tele_torch/tele_torch/tele_torch_level    u:object_r:sysfs_tele_torch_file:s0
