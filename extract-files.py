@@ -18,7 +18,7 @@ namespace_imports = [
     'device/tecno/LH7n',
     'hardware/mediatek',
     'hardware/mediatek/libmtkperf_client',
-    'hardware/transsion',
+    'hardware/millennium',
 ]
 
 blob_fixups: blob_fixups_user_type = {
