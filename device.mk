@@ -111,7 +111,7 @@ PRODUCT_PACKAGES += \
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 2460
-TARGET_SCREEN_WIDTH := 1080    
+TARGET_SCREEN_WIDTH := 1080
 
 # Boot control HAL
 PRODUCT_PACKAGES += \
@@ -228,7 +228,6 @@ PRODUCT_PACKAGES += \
     fstab.mt6789 \
     fstab.mt6789.vendor_ramdisk \
     init_connectivity.rc \
-    init.aee.rc \
     init.connectivity.common.rc \
     init.connectivity.rc \
     init.insmod.sh \
@@ -249,7 +248,7 @@ $(call inherit-product-if-exists, vendor/JamesDSP/config.mk)
 # Lights
 PRODUCT_PACKAGES += \
     android.hardware.lights-service.millennium
-    
+
 # Keylayout
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/keylayout/mtk-tpd.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/mtk-tpd.kl
@@ -324,8 +323,8 @@ PRODUCT_PACKAGES += \
 
 # Lineage-Specific Overlays
 PRODUCT_PACKAGES += \
-	ApertureOverlay
-    
+    ApertureOverlay
+
 # Permissions
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.audio.low_latency.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.audio.low_latency.xml \
@@ -482,10 +481,10 @@ PRODUCT_SOONG_NAMESPACES += \
 # Thermal
 PRODUCT_PACKAGES += \
     android.hardware.thermal-service.mediatek
-    
+
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/thermal/thermal_info_config.json:$(TARGET_COPY_OUT_VENDOR)/etc/thermal_info_config.json
-    
+
 # Vibrator
 PRODUCT_PACKAGES += \
     android.hardware.vibrator-service.millennium    
@@ -520,7 +519,7 @@ PRODUCT_PACKAGES += \
     android.hardware.wifi-service \
     libkeystore-wifi-hidl:64 \
     libkeystore-engine-wifi-hidl:64
-    
+
 PRODUCT_PACKAGES += \
     android.hardware.tetheroffload.config@1.0.vendor:64 \
     android.hardware.tetheroffload.control@1.0.vendor:64 \

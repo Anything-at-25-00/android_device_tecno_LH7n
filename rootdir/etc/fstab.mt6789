@@ -25,10 +25,10 @@ product /product ext4 ro wait,slotselect,avb,logical,first_stage_mount,readahead
 
 
 
-vendor_dlkm /vendor_dlkm ext4 ro wait,slotselect,avb,logical,first_stage_mount,readahead_size_kb=128
+vendor_dlkm /vendor_dlkm erofs ro wait,slotselect,avb,logical,first_stage_mount,readahead_size_kb=128
 
 
-odm_dlkm /odm_dlkm ext4 ro wait,slotselect,avb,logical,first_stage_mount,readahead_size_kb=128
+odm_dlkm /odm_dlkm erofs ro wait,slotselect,avb,logical,first_stage_mount,readahead_size_kb=128
 
 
 /dev/block/by-name/metadata /metadata ext4 noatime,nosuid,nodev,discard wait,check,formattable,first_stage_mount
